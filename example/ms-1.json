@@ -1,0 +1,18 @@
+{
+    "msName": "ms-1",
+    "routes": [
+        {
+            "path": "/app1",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am app1"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/callapp2",
+            "method": "get",
+            "externalService": "http://app2:3000/app2"
+        }
+    ]
+}

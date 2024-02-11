@@ -1,0 +1,37 @@
+{
+    "msName": "universal-1",
+    "routes": [
+        {
+            "path": "/",
+            "method": "get",
+            "responseBody": {
+                "hello": "Hello world",
+                "there": "something new"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/dummy",
+            "method": "get",
+            "responseBody": {
+                "hello": "Hello dummy",
+                "there": "something dummy"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/myport",
+            "method": "post",
+            "responseBody": {
+                "hello": "Hello world POST",
+                "there": "something new POST"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/callapp2",
+            "method": "get",
+            "externalService": "http://localhost:3000/dummy"
+        }
+    ]
+}

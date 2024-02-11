@@ -1,0 +1,13 @@
+{
+    "msName": "ms-2",
+    "routes": [
+        {
+            "path": "/app2",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am app2"
+            },
+            "responseCode": 200
+        }
+    ]
+}

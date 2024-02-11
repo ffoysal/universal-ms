@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app1:
+    image: ffoysal/universal-ms:v1
+    environment:
+      - CONFIG_PATH=/tmp/configs/ms-1.json
+    ports:
+      - "4000:3000"
+    volumes:
+      - .:/tmp/configs
+  app2:
+    image: ffoysal/universal-ms:v1
+    environment:
+      - CONFIG_PATH=/tmp/configs/ms-2.json
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/tmp/configs
