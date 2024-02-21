@@ -1,0 +1,50 @@
+{
+    "msName": "msa",
+    "routes": [
+        {
+            "path": "/app1/menu/items/item1",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msa",
+                "mypath": "/app1/menu/items/item1"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app1/menu/items/item2",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msa",
+                "mypath": "/app1/menu/items/item2"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app1/menu/items/item3",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msa",
+                "mypath": "/app1/menu/items/item3"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app1/lane/items/item1",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msa",
+                "mypath": "/app1/lane/items/item1"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app1/lane/items/item2",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msa",
+                "mypath": "/app1/lane/items/item2"
+            },
+            "responseCode": 200
+        }           
+    ]
+}

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  msa:
+    image: ffoysal/universal-ms:v1
+    environment:
+      - CONFIG_PATH=/tmp/configs/msa.json
+    ports:
+      - "4000:3000"
+    volumes:
+      - .:/tmp/configs
+  msb:
+    image: ffoysal/universal-ms:v1
+    environment:
+      - CONFIG_PATH=/tmp/configs/msb.json
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/tmp/configs
+  envoy:
+    image: envoyproxy/envoy:dev
+    ports:
+      - "10000:10000"
+      - "8001:8001"
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
