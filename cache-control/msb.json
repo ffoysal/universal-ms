@@ -1,0 +1,50 @@
+{
+    "msName": "msb",
+    "routes": [
+        {
+            "path": "/app2/metadata/items/item1",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msb",
+                "mypath": "/app2/metadata/items/item1"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app2/metadata/items/item2",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msb",
+                "mypath": "/app2/metadata/items/item2"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app2/config/items",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msb",
+                "mypath": "/app2/config/items"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app2/properties/items/item1",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msb",
+                "mypath": "/app2/properties/items/item1"
+            },
+            "responseCode": 200
+        },
+        {
+            "path": "/app2/properties/items/item2",
+            "method": "get",
+            "responseBody": {
+                "hello": "I am msb",
+                "mypath": "/app2/properties/items/item2"
+            },
+            "responseCode": 200
+        }           
+    ]
+}
